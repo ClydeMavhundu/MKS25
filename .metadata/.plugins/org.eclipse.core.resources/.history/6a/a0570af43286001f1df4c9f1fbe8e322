@@ -1,0 +1,28 @@
+/*
+ * sct.c
+ *
+ *  Created on: Oct 9, 2024
+ *      Author: 246557
+ */
+This is a source file of my SCT library
+
+
+void sct_init();{
+
+
+}
+void sct_led(uint32_t value);{
+
+
+}
+void sct_led(uint16_t value); {
+
+
+
+
+
+}
+
+
+
+

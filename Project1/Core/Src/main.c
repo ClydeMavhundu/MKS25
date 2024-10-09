@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,6 +91,7 @@ int main(void) {
 	MX_USART2_UART_Init();
 	/* USER CODE BEGIN 2 */
 
+
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -103,7 +105,7 @@ int main(void) {
 			} else {
 				LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 			}
-			LL_mDelay(100);
+			LL_mDelay(300);
 
 		}
 
