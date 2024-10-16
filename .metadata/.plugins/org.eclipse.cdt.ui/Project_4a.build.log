@@ -1,0 +1,17 @@
+16:54:28 **** Incremental Build of configuration Debug for project Project_4a ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Project_4a.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Mavhundu\MKS25\Project_4a\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_4a.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project_4a.elf
+ 
+arm-none-eabi-size  Project_4a.elf 
+arm-none-eabi-objdump -h -S Project_4a.elf  > "Project_4a.list"
+   text	   data	    bss	    dec	    hex	filename
+  17576	     12	   1796	  19384	   4bb8	Project_4a.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project_4a.list
+ 
+
+16:54:29 Build Finished. 0 errors, 0 warnings. (took 1s.80ms)
+
